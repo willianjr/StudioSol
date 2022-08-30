@@ -1,4 +1,4 @@
 [build]
-base = "./react"
+base = "./React"
 command = "npm run build"
 publish = "./build/"
