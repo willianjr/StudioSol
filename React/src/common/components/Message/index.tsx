@@ -2,13 +2,13 @@ import React from 'react'
 
 import { Container } from './styles'
 
-export type IMessagemProps = 'menor' | 'maior' | 'acerto' | 'error' | ''
+export type IMessageProps = 'menor' | 'maior' | 'acerto' | 'error' | ''
 
 interface PropsMessage {
-  type: IMessagemProps
+  type: IMessageProps
 }
 
-export const Mensagem: React.FC<PropsMessage> = ({ type }) => {
+export const Message: React.FC<PropsMessage> = ({ type }) => {
   const msgReturn = [
     { type: 'menor', msg: 'É Menor' },
     { type: 'maior', msg: 'É Maior' },

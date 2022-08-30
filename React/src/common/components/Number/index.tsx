@@ -7,19 +7,22 @@ interface INumber {
   error?: boolean
   success?: boolean
 }
-
+/*NUMBER is a component used to display the number in digital seven segment*/
 export const Number: React.FC<INumber> = ({ number = '0', error, success }) => {
-  const digitPattern = [
-    [1, 0, 1, 1, 0, 1, 1, 1, 1, 1],
-    [1, 0, 0, 0, 1, 1, 1, 0, 1, 1],
-    [1, 1, 1, 1, 1, 0, 0, 1, 1, 1],
-    [0, 0, 1, 1, 1, 1, 1, 0, 1, 1],
-    [1, 0, 1, 0, 0, 0, 1, 0, 1, 0],
-    [1, 1, 0, 1, 1, 1, 1, 1, 1, 1],
-    [1, 0, 1, 1, 0, 1, 1, 0, 1, 1],
+  const pattern = [
+    [1, 1, 1, 0, 1, 1, 1], //0
+    [0, 0, 1, 0, 0, 1, 0], //1
+    [1, 0, 1, 1, 1, 0, 1], //2
+    [1, 0, 1, 1, 0, 1, 1], //3
+    [0, 1, 1, 1, 0, 1, 0], //4
+    [1, 1, 0, 1, 0, 1, 1], //5
+    [1, 1, 0, 1, 1, 1, 1], //6
+    [1, 0, 1, 0, 0, 1, 0], //7
+    [1, 1, 1, 1, 1, 1, 1], //8
+    [1, 1, 1, 1, 0, 1, 1], //9
   ]
 
-  const getActive = (position: number, number: number) => (digitPattern[position][number] === 1 ? true : false)
+  const getActive = (position: number, number: number) => (pattern[number][position] === 1 ? true : false)
   return (
     <DisplayNumber>
       {number.split('').map((n, index) => (

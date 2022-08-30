@@ -1,8 +1,8 @@
 import styled from 'styled-components'
-import { IMessagemProps } from '.'
+import { IMessageProps } from '.'
 
 interface IContainer {
-  type: IMessagemProps
+  type: IMessageProps
 }
 const getColor = (type: string) => {
   switch (type) {

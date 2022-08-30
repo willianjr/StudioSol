@@ -1,10 +1,10 @@
 import React from 'react'
 import { IoReloadSharp } from 'react-icons/io5'
 import { config } from '../../../config/utils'
-import { Mensagem, Number } from '../../components'
-import { useAppContext } from '../../context/App/app'
+import { Message, Number } from '../../components'
+import { useAppContext } from '../../context/App'
 
-import { ButtonNewGame, ContainerPage, ContainerPalpite, Display, Palpite as Guess, TituloGame } from './styles'
+import { ButtonNewGame, ContainerGuess, ContainerPage, Display, Guess, TitleGame } from './styles'
 
 export const HomePage: React.FC = () => {
   const appContext = useAppContext()
@@ -12,9 +12,9 @@ export const HomePage: React.FC = () => {
 
   return (
     <ContainerPage>
-      <TituloGame>Qual é o seu número?</TituloGame>
+      <TitleGame>Qual é o seu número?</TitleGame>
       <Display>
-        <Mensagem type={typeMessage} />
+        <Message type={typeMessage} />
         <Number number={numberDisplay} error={isError} success={isSuccess} />
         {!isGame && (
           <ButtonNewGame type="button" onClick={startGame}>
@@ -23,7 +23,7 @@ export const HomePage: React.FC = () => {
           </ButtonNewGame>
         )}
       </Display>
-      <ContainerPalpite>
+      <ContainerGuess>
         <Guess
           min={config.minNumber}
           max={config.maxNumber}
@@ -42,7 +42,7 @@ export const HomePage: React.FC = () => {
         <button disabled={!isGame} type="button" onClick={() => checkGuess()}>
           Enviar
         </button>
-      </ContainerPalpite>
+      </ContainerGuess>
     </ContainerPage>
   )
 }

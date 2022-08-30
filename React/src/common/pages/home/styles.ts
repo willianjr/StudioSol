@@ -17,7 +17,7 @@ export const ContainerPage = styled.div`
   }
 `
 
-export const TituloGame = styled.h1`
+export const TitleGame = styled.h1`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,7 +59,7 @@ export const ButtonNewGame = styled.button`
   }
   cursor: pointer;
 `
-export const ContainerPalpite = styled.footer`
+export const ContainerGuess = styled.footer`
   display: flex;
   width: 100%;
   height: 5rem;
@@ -81,7 +81,7 @@ export const ContainerPalpite = styled.footer`
     }
   }
 `
-export const Palpite = styled.input.attrs({
+export const Guess = styled.input.attrs({
   type: 'number',
   placeholder: 'Digite o palpite',
   maxLength: 3,

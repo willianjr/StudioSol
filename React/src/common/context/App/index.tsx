@@ -2,7 +2,7 @@ import { AxiosError } from 'axios'
 import React, { createContext, useContext, useState } from 'react'
 import api from '../../../config/services/api'
 import { config } from '../../../config/utils'
-import { IMessagemProps } from '../../components/Mensagem'
+import { IMessageProps } from '../../components/Message'
 
 import { AppContextProps, AppProviderProps } from './types'
 
@@ -17,7 +17,7 @@ export const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
   const [numberDisplay, setNumberDisplay] = useState<string>('0')
   const [number, setNumber] = useState<number>(0)
   const [numberOfGuess, setNumberOfGuess] = useState<number>(0)
-  const [typeMessage, setTypeMessage] = useState<IMessagemProps>('')
+  const [typeMessage, setTypeMessage] = useState<IMessageProps>('')
 
   // useEffect(() => console.log(number), [number])
 
