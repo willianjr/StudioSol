@@ -1,6 +1,7 @@
 import { AxiosError } from 'axios'
 import React, { createContext, useContext, useState } from 'react'
 import api from '../../../config/services/api'
+import { config } from '../../../config/utils'
 import { IMessagemProps } from '../../components/Mensagem'
 
 import { AppContextProps, AppProviderProps } from './types'
@@ -32,7 +33,7 @@ export const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
     setIsLoading(true)
     clearGame()
     api
-      .get('rand?min=1&max=300')
+      .get(`rand?min=${config.minNumber}&max=${config.maxNumber}`)
       .then(({ status, data }) => {
         if (status === 200) {
           setNumber((prev) => data.value)

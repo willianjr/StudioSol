@@ -82,11 +82,9 @@ export const ContainerPalpite = styled.footer`
   }
 `
 export const Palpite = styled.input.attrs({
-  type: 'text',
+  type: 'number',
   placeholder: 'Digite o palpite',
   maxLength: 3,
-  max: 999,
-  min: 0,
 })`
   background: #ffffff;
   border: 1px solid #cfcfcf;

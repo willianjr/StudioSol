@@ -1,9 +1,10 @@
 import React from 'react'
 import { IoReloadSharp } from 'react-icons/io5'
+import { config } from '../../../config/utils'
 import { Mensagem, Number } from '../../components'
 import { useAppContext } from '../../context/App/app'
 
-import { ButtonNewGame, ContainerPage, ContainerPalpite, Display, Palpite, TituloGame } from './styles'
+import { ButtonNewGame, ContainerPage, ContainerPalpite, Display, Palpite as Guess, TituloGame } from './styles'
 
 export const HomePage: React.FC = () => {
   const appContext = useAppContext()
@@ -23,7 +24,21 @@ export const HomePage: React.FC = () => {
         )}
       </Display>
       <ContainerPalpite>
-        <Palpite value={guess} onChange={(e) => setGuess(e.target.value)} disabled={!isGame} />
+        <Guess
+          min={config.minNumber}
+          max={config.maxNumber}
+          value={guess}
+          onChange={(e) =>
+            setGuess(
+              +e.target.value < config.minNumber
+                ? config.minNumber.toString()
+                : +e.target.value > config.maxNumber
+                ? config.maxNumber.toString()
+                : e.target.value,
+            )
+          }
+          disabled={!isGame}
+        />
         <button disabled={!isGame} type="button" onClick={() => checkGuess()}>
           Enviar
         </button>
