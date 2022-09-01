@@ -1,0 +1,555 @@
+#DisplayNumber {
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  > svg {
+    margin: 0.05rem;
+    width: 50% !important;
+    &:nth-child(2),
+    &:nth-child(3) {
+      margin-left: -12rem;
+    }
+
+    &.number-0 {
+      > g {
+        path:nth-child(1) {
+          fill: $ledOn;
+          &.success {
+            fill: $success;
+          }
+          &.error {
+            fill: $error !important;
+          }
+        }
+        path:nth-child(2) {
+          fill: $ledOn;
+          &.success {
+            fill: $success;
+          }
+          &.error {
+            fill: $error !important;
+          }
+        }
+        path:nth-child(3) {
+          fill: $ledOn;
+          &.success {
+            fill: $success;
+          }
+          &.error {
+            fill: $error !important;
+          }
+        }
+        path:nth-child(4) {
+          fill: $ledOff;
+        }
+        path:nth-child(5) {
+          fill: $ledOn;
+          &.success {
+            fill: $success;
+          }
+          &.error {
+            fill: $error !important;
+          }
+        }
+        path:nth-child(6) {
+          fill: $ledOn;
+          &.success {
+            fill: $success;
+          }
+          &.error {
+            fill: $error !important;
+          }
+        }
+        path:nth-child(7) {
+          fill: $ledOn;
+          &.success {
+            fill: $success;
+          }
+          &.error {
+            fill: $error !important;
+          }
+        }
+      }
+    }
+    &.number-1 > g {
+      path:nth-child(1) {
+        fill: $ledOff;
+      }
+      path:nth-child(2) {
+        fill: $ledOff;
+      }
+      path:nth-child(3) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(4) {
+        fill: $ledOff;
+      }
+      path:nth-child(5) {
+        fill: $ledOff;
+      }
+      path:nth-child(6) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(7) {
+        fill: $ledOff;
+      }
+    }
+    &.number-2 > g {
+      path:nth-child(1) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(2) {
+        fill: $ledOff;
+      }
+      path:nth-child(3) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(4) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(5) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(6) {
+        fill: $ledOff;
+      }
+      path:nth-child(7) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+    }
+    &.number-3 > g {
+      path:nth-child(1) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(2) {
+        fill: $ledOff;
+      }
+      path:nth-child(3) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(4) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(5) {
+        fill: $ledOff;
+      }
+      path:nth-child(6) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(7) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+    }
+    &.number-4 > g {
+      path:nth-child(1) {
+        fill: $ledOff;
+      }
+      path:nth-child(2) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(3) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(4) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(5) {
+        fill: $ledOff;
+      }
+      path:nth-child(6) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(7) {
+        fill: $ledOff;
+      }
+    }
+    &.number-5 > g {
+      path:nth-child(1) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(2) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(3) {
+        fill: $ledOff;
+      }
+      path:nth-child(4) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(5) {
+        fill: $ledOff;
+      }
+      path:nth-child(6) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(7) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+    }
+    &.number-6 > g {
+      path:nth-child(1) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(2) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(3) {
+        fill: $ledOff;
+      }
+      path:nth-child(4) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(5) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(6) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(7) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+    }
+    &.number-7 > g {
+      path:nth-child(1) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(2) {
+        fill: $ledOff;
+      }
+      path:nth-child(3) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(4) {
+        fill: $ledOff;
+      }
+      path:nth-child(5) {
+        fill: $ledOff;
+      }
+      path:nth-child(6) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(7) {
+        fill: $ledOff;
+      }
+    }
+    &.number-8 > g {
+      path:nth-child(1) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(2) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(3) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(4) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(5) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(6) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(7) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+    }
+    &.number-9 > g {
+      path:nth-child(1) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(2) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(3) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(4) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(5) {
+        fill: $ledOff;
+      }
+      path:nth-child(6) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+      path:nth-child(7) {
+        fill: $ledOn;
+        &.success {
+          fill: $success;
+        }
+        &.error {
+          fill: $error !important;
+        }
+      }
+    }
+    @media screen and (max-width: 680px) {
+      &:nth-child(2),
+      &:nth-child(3) {
+        margin-left: -2rem;
+      }
+    }
+    @media screen and (min-width: 610px) and (max-width: 1800px) {
+      &:nth-child(2),
+      &:nth-child(3) {
+        margin-left: -3rem;
+      }
+    }
+  }
+}

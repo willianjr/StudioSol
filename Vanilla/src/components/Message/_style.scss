@@ -1,0 +1,13 @@
+#Message {
+  &.menor,
+  &.maior {
+    color: $orange;
+  }
+  &.success {
+    color: $success;
+  }
+  &.error {
+    color: $error;
+  }
+  color: $black;
+}
